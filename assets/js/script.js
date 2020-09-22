@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $(this).on("click","a", function (event) {
+  $('.menu__list, .fullscreen__main').on("click","a", function (event) {
       event.preventDefault();
       var id  = $(this).attr('href'),
           top = $(id).offset().top;
@@ -16,7 +16,7 @@ $('.icon-menu').click(function(event) {
 $('.menu__link').click(function(event) {
     $('.icon-menu').removeClass('active');
     $('.menu__body').removeClass('active');
-    $('body').toggleClass('lock');
+    $('body').removeClass('lock');
 })
 
 $(function() {
