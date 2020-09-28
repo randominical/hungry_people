@@ -34,6 +34,7 @@ body {
 }
 .wrapper {
 	max-width: 1440px;
+	min-width: 280px;
 	overflow: hidden;
 	min-height: 100%;
 }
@@ -998,7 +999,7 @@ $maxWidth: 1440;
 	&__box {
 		@include flexbox;
 	}
-	&__call, &__call a {
+	&__call {
 		color: $grey-dark;
 	}
 	.form {
@@ -1311,7 +1312,7 @@ $maxWidth: 1440;
 			}
 		}
 	}
-	&__call, &__call a {
+	&__call {
 		color: rgba(255, 255, 255, 0.5);
 		margin: 40px 0 40px 0;
 	}
