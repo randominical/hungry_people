@@ -274,11 +274,11 @@ a, button, input[type="submit"] {
     .header .menu__link:hover {
       border: 1px solid rgba(255, 255, 255, 0.7); }
   .header.hidden .menu__body {
-    display: none;
     position: fixed;
     height: 100%;
+    width: auto;
     top: 0;
-    left: 0;
+    left: -100%;
     overflow: auto;
     z-index: 2;
     padding: 120px 20px 30px 20px;
@@ -286,7 +286,7 @@ a, button, input[type="submit"] {
     transition: all .3s ease 0s;
     background: #222020; }
     .header.hidden .menu__body.active {
-      display: block; }
+      left: 0; }
   .header.hidden .menu__icon {
     display: block;
     position: relative;
@@ -371,11 +371,10 @@ a, button, input[type="submit"] {
         margin: 0  0 0 70px; } }
   @media (max-width: 767px) {
     .header .menu__body, .header.hidden .menu__body {
-      display: none;
       position: fixed;
       height: 100%;
       width: 100%;
-      top: 0;
+      top: -100%;
       left: 0;
       overflow: auto;
       z-index: 2;
@@ -384,7 +383,7 @@ a, button, input[type="submit"] {
       transition: all .3s ease 0s;
       background: #222020; }
       .header .menu__body.active, .header.hidden .menu__body.active {
-        display: block; }
+        top: 0; }
     .header .menu__icon, .header.hidden .menu__icon {
       display: block;
       position: relative;
