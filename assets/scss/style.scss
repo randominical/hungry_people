@@ -357,7 +357,6 @@ $maxWidth: 1440;
 	left: 0;
 	width: 100%;
     z-index: 50;
-	padding-top: 30px;
     .menu {
         &__cover {
             display: flex;
@@ -370,7 +369,7 @@ $maxWidth: 1440;
 			padding: 0;
             justify-content: space-between;
 			position: relative;
-            padding: 0 ;
+            padding: 0;
             &:before {
                 content: '';
                 position: absolute;
@@ -378,7 +377,7 @@ $maxWidth: 1440;
                 height: 1px;
                 background-color: $lines-color;
                 left: -10%;
-                bottom: -50px;
+                bottom: -0;
             }
             &_l {
                 margin: 0 140px 0 0;
@@ -391,6 +390,10 @@ $maxWidth: 1440;
 			display: none;
 		}
         &__link {
+			height: 90px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
             color: $white;
             font-family: $main-font;
             font-weight: bold;
@@ -424,6 +427,8 @@ $maxWidth: 1440;
         .menu__icon {
 			display: block;
 			position: relative;
+			left: 0;
+			top: 20px;
 			width: 30px;
 			height: 20px;
 			z-index: 3;
@@ -484,6 +489,7 @@ $maxWidth: 1440;
             }
         } 
         .menu__link {
+			height: auto;
             padding: 10px 10px;
             font-size: 20px;
             text-shadow: none;
@@ -500,13 +506,9 @@ $maxWidth: 1440;
 		}
 	}
 	@media (max-width: 1199px), (max-height: 600px) {
-		.menu__list {
-			&:before {
-				bottom: -30px;
-			}
-		}
 		.menu__link {
-			padding: 47.5px 10px 30px 10px;
+			height: 77px;
+			padding: 40.5px 10px 37px 10px;
 		}
 		&.hidden {
 			.menu__link {
@@ -517,11 +519,20 @@ $maxWidth: 1440;
 	@media (max-width: 991px) {
 		.menu__list {
 			flex: 0 1 calc(50% - 70px);
+			&:before {
+				width: 110%;
+			}
 			&_l {
 				margin: 0 70px 0 0;
+				&:before {
+					right: 0;
+				}
 			}
 			&_r {
 				margin: 0  0 0 70px;
+				&:before {
+					left: 0;
+				}
 			}
 		}
 	}
@@ -544,7 +555,9 @@ $maxWidth: 1440;
             }
             .menu__icon {
                 display: block;
-                position: relative;
+				position: relative;
+				left: 0;
+				top: 20px;
                 width: 30px;
                 height: 20px;
                 z-index: 3;
@@ -601,10 +614,11 @@ $maxWidth: 1440;
                 li {
                     display: block;
                     text-align: center;
-                    margin: 0 0 25px 0;
+                    margin: 0 0 20px 0;
                 }
             } 
             .menu__link {
+				height: auto;
                 padding: 10px 10px;
                 font-size: 22px;
                 text-shadow: none;
