@@ -465,10 +465,10 @@ $maxWidth: 1440;
 				transition: transform .5s linear;
 			}
 			&:before {
-				top: 0;
+				top: 1px;
 			}
 			&:after {
-				bottom: 0;
+				bottom: 1px;
 			}
         }
         .menu__cover {
@@ -559,7 +559,7 @@ $maxWidth: 1440;
 				left: 0;
 				top: 20px;
                 width: 30px;
-                height: 20px;
+				height: 20px;
                 z-index: 3;
                 &:hover {
                     span {
@@ -594,10 +594,10 @@ $maxWidth: 1440;
                     transition: transform .5s linear;
                 }
                 &:before {
-                    top: 0;
+                    top: 1px;
                 }
                 &:after {
-                    bottom: 0;
+                    bottom: 1px;
                 }
             }
             .menu__cover {

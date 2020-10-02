@@ -339,9 +339,9 @@ a, button, input[type="submit"] {
       transition: transform .5s linear;
       transition: transform .5s linear, -webkit-transform .5s linear; }
     .header.hidden .menu__icon:before {
-      top: 0; }
+      top: 1px; }
     .header.hidden .menu__icon:after {
-      bottom: 0; }
+      bottom: 1px; }
   .header.hidden .menu__cover {
     display: block; }
   .header.hidden .menu__list {
@@ -444,9 +444,9 @@ a, button, input[type="submit"] {
         transition: transform .5s linear;
         transition: transform .5s linear, -webkit-transform .5s linear; }
       .header .menu__icon:before, .header.hidden .menu__icon:before {
-        top: 0; }
+        top: 1px; }
       .header .menu__icon:after, .header.hidden .menu__icon:after {
-        bottom: 0; }
+        bottom: 1px; }
     .header .menu__cover, .header.hidden .menu__cover {
       display: block; }
     .header .menu__list, .header.hidden .menu__list {
@@ -1779,5 +1779,4 @@ a, button, input[type="submit"] {
     height: 310px; }
   100% {
     height: 300px; } }
-
 /*# sourceMappingURL=style.css.map */
