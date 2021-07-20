@@ -1125,6 +1125,8 @@ a, button, input[type="submit"] {
     color: rgba(51, 51, 51, 0.5); }
   .book .form input::-webkit-calendar-picker-indicator {
     display: none; }
+    .book .form .datalist__arrow {
+      opacity: 0; }
   .book .form .datalist__arrow:after {
     content: '';
     border: 1px solid rgba(51, 51, 51, 0.5);
